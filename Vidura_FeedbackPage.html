@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Vidura_FeedbackPage.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <nav>
+        <a href="Vidura_MainPage.html"><img src="images/Our_logo.jpg" alt="logo" id="logo"></a>
+        <a class="nav-item" href="Vidura_MainPage.html">Home</a>
+        <a class="nav-item active" href="Vidura_FeedbackPage.html">Comments</a>
+        <a class="nav-item" href="Kaviru_mainPage.html">Products</a>
+        <a class="nav-item" href="Quiz.html">Quiz</a>
+        <a class="nav-item" href="Senuja_Sitemap.html">Site map</a>
+        <a class="nav-item" href="Senuja_Gallery.html">Gallery</a>
+        <a class="nav-item" href="Chavidu_studentdetails.html">About Us</a>
+    </nav>
+    <div class="comment">
+        <div class="content gray"  id="scrollpoint">
+            <div class="mid-content">
+                <form action="https://formspree.io/f/mrgvyyzg" name="Feedback_form" onsubmit="return validateForm()" method="POST" >
+                    <div class="how-did-we-do">
+                        <h1>How did we do?</h1>
+                    </div>
+                    <div id="rating-error" class="rating-error error-card hidden">
+                        <p>Rating is required</p>
+                    </div>
+                    <div id="rating" class="comment-card">
+                        <p>How satisfied were you with our website today? Choose from 0 to 10, where 0 is extremely
+                            dissatisfied and 10 is extremely satisfied </p>
+                        <div class="input-list-content">
+                            <div class="input-item">
+                                <label for="0">0</label>
+                                <input type="radio" id="0" name="rating on our Website" value="0">
+                            </div>
+                            <div class="input-item">
+                                <label for="1">1</label>
+                                <input type="radio" id="1" name="rating on our Website" value="1">
+                            </div>
+                            <div class="input-item">
+                                <label for="2">2</label>
+                                <input type="radio" id="2" name="rating on our Website" value="2">
+                            </div>
+                            <div class="input-item">
+                                <label for="3">3</label>
+                                <input type="radio" id="3" name="rating on our Website" value="3">
+                            </div>
+                            <div class="input-item">
+                                <label for="4">4</label>
+                                <input type="radio" id="4" name="rating on our Website" value="4">
+                            </div>
+                            <div class="input-item">
+                                <label for="5">5</label>
+                                <input type="radio" id="5" name="rating on our Website" value="5">
+                            </div>
+                            <div class="input-item">
+                                <label for="6">6</label>
+                                <input type="radio" id="6" name="rating on our Website" value="6">
+                            </div>
+                            <div class="input-item">
+                                <label for="7">7</label>
+                                <input type="radio" id="7" name="rating on our Website" value="7">
+                            </div>
+                            <div class="input-item">
+                                <label for="8">8</label>
+                                <input type="radio" id="8" name="rating on our Website" value="8">
+                            </div>
+                            <div class="input-item">
+                                <label for="9">9</label>
+                                <input type="radio" id="9" name="rating on our Website" value="9">
+                            </div>
+                            <div class="input-item">
+                                <label for="10">10</label>
+                                <input type="radio" id="10" name="rating on our Website" value="10">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="question-error" class="question-error error-card hidden">
+                        <p>This qestion is required</p>
+                    </div>
+                    <div id="feedback" class="comment-card question">
+                        <p>Please could you tell us your reasons for giving this rating</p>
+                        <div class="input-list-content">
+                            <div>
+                                <textarea  name="Feedback" rows="4" cols="145"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-card">
+                        <p>How did you want to complete this task today? (optional)</p>
+                        <div>
+                            <select name="How did you want to complete this" >
+                                <option value="" disabled selected>-----Please select your option-----</option>
+                                <option value="phone">Phone</option>
+                                <option value="website">Website</option>
+                                <option value="webchat">Webchat</option>
+                                <option value="socialmedia">Social media</option>
+                                <option value="email">Email</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="comment-card">
+                        <p>If you had to complete this task again, how would you prefer to do it? (optional)</p>
+                        <div>
+                            <select name="how would you prefer ">
+                                <option value="" disabled selected>-----Please select your option-----</option>
+                                <option value="phone">Phone</option>
+                                <option value="website">Website</option>
+                                <option value="webchat">Webchat</option>
+                                <option value="socialmedia">Social media</option>
+                                <option value="email">Email</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="button-submit">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+      <footer class="footer">
+            <div id="footerRow2">
+                <div class="footerpageEditbtn">
+                    <a href="Vidura_PageEditor.html">Page Editor</a>
+                </div>
+                <div class="rightcornbtn">
+                    <div class="view">
+                        <a href="#scrollpoint">Go Top</a>
+                    </div>
+                </div>
+            </div>   
+        </footer>
+     </div>
+    </body>
+</html>

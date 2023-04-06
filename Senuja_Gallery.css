@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+
+h1{
+    letter-spacing: 3px;
+    padding: 30px;
+    background-color: #ecad0f;
+    text-align: center;
+    border-right: 20px rgb(245, 245, 5) solid;
+    border-left: 20px rgb(245, 245, 5) solid;
+    margin: 50px 0 20px 0;   
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #8c3e0a; 
+    display: grid;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 600px;
+    margin-right: 0;
+}
+
+/* Font increase descrease buttons style https://youtu.be/ETvRZgrcFj8*/
+.font-buttons{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    padding-right: 20px;
+    gap: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.font-buttons .icon{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.font-buttons .icon span{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    line-height: 75px;
+    background: yellow;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+
+.font-buttons .icon .icon-label{
+    background: yellow;
+    font-size: 20px;
+    color: #000000;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0px;
+    width: 200%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.font-buttons .icon:hover .icon-label{
+    top: -88px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.font-buttons .icon .icon-label::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: yellow;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.font-buttons .icon:hover span,
+.font-buttons .icon:hover .icon-label{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.6);
+}
+
+.img1 {
+    width: 30px;
+    height: 30px;
+    
+}
+
+
+/*  random color changer button */
+.rc{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    line-height: 75px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    border: 2px solid yellow;
+    margin-top: 20px;
+    padding: 2px;
+}
+
+/*  background/text color change buttons style https://stackoverflow.com/questions/50434409/how-can-i-make-a-split-color-box */
+.color-buttons {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.bt {
+    cursor: pointer;
+    margin-bottom:0;
+    padding: 12px 16px;
+    background-image: linear-gradient(90deg, var(--color) 50%, var(--color2) 50%);
+    border: 2px solid transparent;
+    border-color: yellow;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+
+.btn1 {
+    --color: #8c3e0a;
+    --color2:black;
+}
+
+.btn2 {  
+    --color: #9932a8;
+    --color2:red;
+}
+
+.btn3 {
+    --color:#3242a8;
+    --color2: green;
+}
+
+/* small gallery image buttons style */
+
+.product-small-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    float:right;
+    gap:50px;
+    padding:50px;
+}
+
+.product-small-img img {
+    height: 180px;
+    width: 140px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    opacity: 1.6;
+    box-shadow: 0 0 20px 2px rgba(255, 233, 233, 0.503);
+    transition: 1s;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10%;
+}
+
+.product-small-img img:hover {
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+/*-------------------------- */
+
+.image-details {
+    margin-top: 300px;
+    margin-right: 30px;
+    float: right;
+}
+
+/* title of the big image style */
+.image-details h3 {
+    margin: 0px 0 0 420px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    transition: color 0.3s ease-in;
+    background-color: white;
+    display: inline-block;
+    border-radius: 15px;
+    border: 5px solid transparent;
+    border-color: #000000;
+}
+
+/* description of the big image style */
+.image-details p {
+    margin: 30px 0 0px 50px;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: justify;
+    padding: 20px;
+    transition: color 0.3s ease-in;
+    background-color: white;
+    display: inline-block;
+    border-radius: 15px;
+    width: 900px;
+    border: 5px solid transparent;
+    border-color: #000000;
+    
+}
+
+/* big image style */
+.image-container img {
+    height: 600px;
+    width: 400px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#image-box{
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+/* Navigation Bar */
+nav {
+	font-family: Tahoma, sans-serif;
+	background: #5c0101;
+	line-height: 30px;
+	text-align: right;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+nav .nav-item {
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 16px;
+	vertical-align: middle;
+	transition: all 0.3s ease;
+}
+
+nav .nav-item:hover {
+	background: #D6C3B3;
+	color: black;
+}
+
+nav .nav-item.active{
+    background: #000000;
+    color: white;
+}
+
+nav img{
+    margin: 8px 8px 8px 30px;
+    height: 42px;
+    float: left;
+    border-radius: 10PX;
+}
+
+/*Footer */
+.footer{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #5c0101;
+    width: 100%;
+
+}
+
+#footerRow2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 95%;
+}
+
+#credits{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-size: 12pt;
+    text-decoration: none;
+    width: 100%;
+    padding: 3% 0 2% 0;
+}
+
+#credits a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-size: 12pt;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+.footerpageEditbtn{
+    display: flex;
+    align-items: center;
+    text-align:center;
+    padding-bottom: 2%;
+}
+
+.footerpageEditbtn a{
+    text-decoration: none;
+    padding:15px;
+    border:none;
+    background-color: gray;
+    color:white;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rightcornbtn{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /* margin-top: 2%; */
+
+}
+
+.rightcornbtn a{
+    text-decoration: none;
+    padding:15px;
+    border:none;
+    background-color: gray;
+    color:white;
+    width: 100%;
+    font-family: 'Helvetica Neue', sans-serif;
+}

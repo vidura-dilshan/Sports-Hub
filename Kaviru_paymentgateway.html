@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Kaviru_paymentgateway.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Payment Gateway</title>
+  </head>
+  <body>
+    <div class="summery">
+      <div class="container">
+        <h1 class="details">Order Summary</h1>
+        <p>Name - <span id="username"></span></p>
+        <p>To contact the customer - <span id="contactway"></span></p>
+      </div>
+      </div>
+      <br>
+      <div class="billing-details">
+          <div class="container">
+            <form>
+              <div class="card-details">
+                <h3>Payment</h3><br>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+
+                  <label for="ccnum">Credit card number<span class="required">*</span></label>
+                  <input type="text" autocomplete=off id="ccnum" name="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength=16 minlength=15 pattern="[0-9]{16}" required>
+                  <span id="ccnum-error"></span><br><br>
+                  <label for="cname">Name on Card<span class="required">*</span></label>
+                  <input type="text" autocomplete=off id="cname" name="cardname" placeholder="Type your name here" required>
+                  <br><br>
+                  <label for="expmonth">Expiry date : <span class="required">*</span></label><br>
+                  <input type="number" id="expmonth" name="expmonth"maxlength="2" max="12" min="1" placeholder="MM"required> / 
+                  <input type="number" id="expyear" name="expyear" maxlength="4" max="9999" min="2000"placeholder="YY"required>
+                  <br><br>
+                  <label for="cvv">Security code : <span class="required">*</span></label>
+                  <input type="text" autocomplete=off id="cvv" name="cvv" placeholder="123" maxlength="3" pattern="[0-9]{3}" required>
+                  <br>
+              </div>
+
+              <div class="card-details">
+
+                <h3>Billing Details</h3>
+                  <br>
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address 1<span class="required">*</span></label>
+                  <input type="text" autocomplete=off id="adr" name="address" placeholder="76. Gall road colombo" required>
+                  <br><br>
+                  <label for="adr2">Address 2</label>
+                  <input type="text" autocomplete=off id="adr2" name="address2">
+                  <br><br>
+                  <label for="adr3">Address 3</label>
+                  <input type="text" autocomplete=off id="adr3" name="address2">
+                  <br><br>
+                  <label for="city"><i class="fa fa-institution"></i>Town / City<span class="required">*</span></label>
+                  <input type="text"  autocomplete=off id="city" name="city" placeholder="Colombo"required>
+                  <br><br>
+                  <label for="state">State/Region:</label>
+                  <input type="text" autocomplete=off id="state" name="state" placeholder="Western / Colombo">
+                  <br><br>
+                  <label for="zip">Postalcode / Zip code<span class="required">*</span></label>
+                  <input type="text" autocomplete=off id="zip" name="zip" placeholder="1010"required>
+                  <br><br>
+                  <label for="country">Country<span class="required">*</span></label>
+                  <select id="country" name="country"required>
+                    <br><br>
+                    <option value="srilanka">Sri Lanka</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="usa">USA</option>
+                  </select> <br><br>
+
+                  <button type="button" value="Confirm" class="btn">Confirm</button>
+
+              </div>
+                <div class="card-details">
+                  <h3>Customer Contact Details</h3>
+                  <br>
+                  <label for="phone">Phone number</label>
+                  <input type="tel" autocomplete=off id="phone" name="phone" placeholder="(071)xx xxxxxx" maxlength=10 minlength="10" pattern="[0-9]{10}">
+                  <br><br>
+                  <label for="email">Email address<Address></Address></label>
+                  <input type="email" autocomplete=off id="email" name="email" placeholder="you@example.com" ><br><br>
+                  <button type="button" value="Confirm" class="btn">Confirm</button>
+                </div>
+                <br>
+                <h1>Total Amount to pay Rs. <span id="finalTotal"></span></h1>
+                <button type="button" class="gotorecipt" onclick="checkbutton()" >Continue to checkout</button>
+              </form>
+            </div>
+          </div>
+        <script src="Kaviru_paymentgateway.js"></script>
+        
+        </body>
+         <!--footer-->
+      <div class="footer">
+        <div id="footerRow2">
+            <div class="footerpageEditbtn">
+                <a href="Kaviru_pageEditor.html">Page Editor</a>
+            </div>
+            <div class="rightcornbtn">
+                <div class="view">
+                    <a href="#scrollimg">Go Top</a>
+                </div>
+            </div>
+        </div>   
+    </div>
+        </html>
+        

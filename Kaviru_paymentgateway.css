@@ -1,0 +1,118 @@
+body {
+  background-image: url(wallpapers/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Roboto',sans-serif;
+  color: white;
+}
+
+.container {
+  background-color: #181818b5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-details {
+  background-color: #000000fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(202, 202, 202, 0.393);
+  margin-bottom: 20px;
+}
+
+.required {
+  color: red;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-container i {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.details {
+  color: #bababa;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+  padding: 10px 1px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  color: #000000;
+  background-color: #fbfbfbb7;
+
+  margin-bottom: 10px;
+  width: 100%;
+}
+#expmonth, #expyear {
+  padding: 10px 1px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  color: #000000;
+  background-color: #fbfbfbb7;
+
+  margin-bottom: 10px;
+  width: 7%;
+}
+#cvv {
+  padding: 10px 1px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  color: #000000;
+  background-color: #fbfbfbb7;
+
+  margin-bottom: 10px;
+  width: 10%;
+}
+::placeholder {
+  color: #ffffff;
+}
+
+button[type="button"] {
+  padding: 10px 20px;
+  background-color: #3c3c3c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="button"]:hover {
+  background-color: #6e0000;
+  transition: 0.35s;
+}
+ccnum-error {
+  color: red;
+}
+.gotorecipt {
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background: #969696;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+

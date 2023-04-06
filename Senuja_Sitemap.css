@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+
+h1{
+	text-align:center;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/dv.jpg);
+    background-size: cover;
+}
+
+image{
+    mix-blend-mode: multiply;
+}
+
+/* Showing a white border when hovering over icons */
+svg a:hover {
+    stroke: white;
+    stroke-width: 2px;
+    fill: white;
+  }
+
+svg a {
+    stroke: none;
+    fill: #000000;
+  }
+  
+  
+/* Navigation Bar */
+nav{
+    font-family: Tahoma, sans-serif;
+    overflow: hidden;
+    background:#5c0101;
+    line-height:30px;
+    width: 100%;
+    text-align: right;
+    position: fixed;
+    z-index: 1;
+}
+nav .nav-item{
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+nav .nav-item:hover{
+    background: #D6C3B3;
+    color: black;
+
+}
+nav .nav-item.active{
+    background: #000000;
+    color: white;
+}
+
+nav img{
+    margin: 8px 8px 8px 30px;
+    height: 42px;
+    float: left;
+    border-radius: 10PX;
+}
+
+/*Footer */
+.footer{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #5c0101;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+#footerRow2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 95%;
+}
+
+#credits{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-size: 12pt;
+    text-decoration: none;
+    width: 100%;
+    padding: 3% 0 2% 0;
+}
+
+#credits a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-size: 12pt;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+.footerpageEditbtn{
+    display: flex;
+    align-items: center;
+    text-align:center;
+    padding-bottom: 2%;
+}
+
+.footerpageEditbtn a{
+    text-decoration: none;
+    padding:15px;
+    border:none;
+    background-color: gray;
+    color:white;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rightcornbtn{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /* margin-top: 2%; */
+
+}
+
+.rightcornbtn a{
+    text-decoration: none;
+    padding:15px;
+    border:none;
+    background-color: gray;
+    color:white;
+    width: 100%;
+    font-family: 'Helvetica Neue', sans-serif;
+}

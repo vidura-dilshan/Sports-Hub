@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Gallery </title>
+	<link rel="stylesheet" href="Senuja_Gallery.css">
+</head>
+<body>
+	<nav> <!--Navigation bar -->
+		<a href="Vidura_MainPage.html"><img src="images/Our_logo.jpg" alt="logo" id="logo"></a>
+		<a class="nav-item active" href="Vidura_MainPage.html">Home</a>
+		<a class="nav-item" href="Vidura_FeedbackPage.html">Comments</a>
+		<a class="nav-item" href="Kaviru_mainPage.html">Products</a>
+		<a class="nav-item" href="Quiz.html">Quiz</a>
+		<a class="nav-item" href="Senuja_Sitemap.html">Site map</a>
+		<a class="nav-item active" href="Senuja_Gallery.html">Gallery</a>
+		<a class="nav-item" href="Chavidu_studentdetails.html">About Us</a>
+	</nav>
+
+	<div class="header">
+		<h1>Sports Gallery</h1>
+		<div class="buttons">
+			<div class = "font-buttons">
+				<div class="icon increase" onclick="increaseFontSize()"> <!--Font increase descrease buttons -->
+					<div class="icon-label"> Increase <br> Font - Size </div>
+					<span> <input type="image" src="images/Inecrease_icon.png" alt="Button1 Image" class="img1"> </span>
+				</div>
+				<div class="icon decrease" onclick="decreaseFontSize()">
+					<div class="icon-label"> Decrease <br> Font - Size </div>
+					<span> <input type="image" src="images/Decrease_icon.png" alt="Button2 Image" class="img1"> </span>
+				</div>
+				
+			</div>
+			<div class = "color-buttons"> <!--Background/text color changing buttons -->
+				<button class="bt btn1" onclick="changeColor('black', '#8c3e0a')"> </button>
+				<button class="bt btn2" onclick="changeColor('red', '#9932a8')"></button>
+				<button class="bt btn3" onclick="changeColor('green', '#3242a8')"></button>
+				<input type="image" src="images/rcolor.png" alt="rc Image" class="rc img1" onclick="randomColors()">
+			</div>
+		</div>
+	</div>
+
+		<div class = "image-product">
+			<div class="product-small-img"> <!--small images -->
+				<img src="images/tennis.jpg" alt="Tennis" onclick="thumbnailimage(this)" data-description="Tennis is a racquet sport that can be played either solo (against one opponent) or (each team has two players) doubles. Each player hits a hollow rubber ball wrapped in felt over or over a net and into the other team's court using a tennis racket that is cord-strung. The goal of the game is to move the ball in a way that prevents the other team from playing a legal return. The player who is unable to successfully return the ball will not receive a point; instead, the opponent will.">
+				<img src="images/surfing.jpg" alt="Surfing" onclick="thumbnailimage(this)" data-description="Surfing is a surface water activity in which a surfer (or two in tandem surfing) uses a board to ride the forward face or section of a wave that is moving. The wave usually transports the surfer towards the direction of the beach. In addition to standing waves in the open ocean, lakes, tidal bores in rivers, and wave pools, the best places to find waves for surfing are on the ocean coastlines.">
+				<img src="images/swimming.webp" alt="Swimming" onclick="thumbnailimage(this)" data-description="Swimming is a team or individual sport that involves moving through water while using one's full body. The game is played in open water or swimming pools (e.g., in a sea or lake). One of the most well-liked Olympic sports is competitive swimming, which features a variety of distance events in the butterfly, backstroke, breaststroke, freestyle, and individual medley strokes. In addition to these individual competitions, a freestyle or medley relay can be entered by four swimmers.">
+				<img src="images/bowling.jpg" alt="Bowling" onclick="thumbnailimage(this)" data-description="Bowling is a target sport and leisure activity in which a player rolls a ball toward pins (in pin bowling) or another target (in target bowling). Although target bowling, such as lawn bowls, is occasionally referred to as bowling in the United Kingdom and other Commonwealth nations, the name 'bowling' most frequently refers to pin bowling (most frequently ten-pin bowling).">
+				<img src="images/football.jpg" alt="Football" onclick="thumbnailimage(this)" data-description="Association football, also referred to as football or soccer, is a team sport in which two teams of 11 players compete against one another. The players mostly use their feet to move the ball across a rectangular surface known as a pitch. The goal of the game is to score more goals than your opponent's team by advancing the ball into a goal with a rectangular frame that is being defended by the other team. Two 45-minute halves make up the game's customary format, making the entire contest last 90 minutes.">
+			</div>	
+
+			<div class = "image-container"> <!--big image -->
+				<img id = "image-box" src="images/tennis.jpg" alt="big-image"> 
+				<div class="image-details"> <!--big image's title and description -->
+					<h3 id="image-title">Tennis</h3>
+					<p id="image-description">Tennis is a racquet sport that can be played either solo (against one opponent) or (each team has two players) doubles. Each player hits a hollow rubber ball wrapped in felt over or over a net and into the other team's court using a tennis racket that is cord-strung. The goal of the game is to move the ball in a way that prevents the other team from playing a legal return. The player who is unable to successfully return the ball will not receive a point; instead, the opponent will.</p>
+				</div>
+			</div>
+			  
+		</div>
+
+		<script src="Senuja_Gallery.js"></script>
+	
+		<div class="footer">
+            <div id="footerRow2">
+                <div class="footerpageEditbtn">
+                    <a href="Senuja_pageeditor.html">Page Editor</a>
+                </div>
+                <div class="rightcornbtn">
+                    <div class="view">
+                        <a href="#scrollpoint">Go Top</a>
+                    </div>
+                </div>
+            </div>   
+        </div>
+	</body>
+</html>

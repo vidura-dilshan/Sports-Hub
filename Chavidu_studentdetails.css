@@ -1,0 +1,148 @@
+*{
+  font-family: 'Roboto',sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("images/dv.jpg");
+  background-size: cover;
+}
+
+/*----Navigation bar----*/
+nav{
+  font-family: Tahoma, sans-serif;
+  overflow: hidden;
+  background:#5c0101;
+  line-height:30px;
+  width: 100%;
+  text-align: right;
+  position: fixed;
+  z-index: 1;
+  margin-top: -34px;
+  margin-left: -8px;
+}
+nav .nav-item{
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+nav .nav-item:hover{
+  background: #D6C3B3;
+  color: black;
+
+}
+nav .nav-item.active{
+  background: #000000;
+  color: white;
+}
+
+nav img{
+  margin: 8px 8px 8px 30px;
+  height: 42px;
+  float: left;
+  border-radius: 10PX;
+}
+
+.heading1{
+	font-family: 'Roboto',sans-serif;
+  text-align:center;
+	font-size: 50px;
+  border-top: 10px;
+  padding-top: 62px;
+  color: white;
+}
+
+.containers{
+  position: relative;
+  width: 24%;
+  margin: 7px;
+  float: left;
+}
+.image{
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-top: 0px;
+  box-shadow: 0 -7px 10px rgba(231, 227, 227, 0.766),
+  0 11px 20px rgba(225, 221, 221, 0.789);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #525252;
+}
+.containers:hover .overlay {
+  opacity: 1;
+}
+.text {
+  font-family: 'Roboto',sans-serif;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*----footer----*/
+.footer{
+  position: fixed;
+  margin-top: 27%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #5c0101;
+  width: 100%;
+  max-width: inherit;
+  bottom: 0;
+  height: 70px;
+  margin-left: -10px;
+}
+
+#footerRow2{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.footerpageEditbtn{
+  display: flex;
+  align-items: center;
+  text-align:center;
+  padding-bottom: 2%;
+}
+
+.footerpageEditbtn a{
+  text-decoration: none;
+  padding:15px;
+  border:none;
+  background-color: gray;
+  color:white;
+  width: 100%;
+  font-family:'Roboto',sans-serif;
+}
+
+
+
+
+
+
+

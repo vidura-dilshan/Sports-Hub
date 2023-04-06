@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page_Editor</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body,
+        html{
+            color: white;
+            font-family:'lato',sans-serif;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        body{
+            background-image: url(images/dv.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .center .avatar img{
+            border-radius: 50%;
+            width: 140px;
+            height: 140px;
+            margin-top: 5%;
+            object-fit: cover;
+            object-position: 0 -8px;
+
+        }
+        .center{
+            padding:50px;
+            width: 55%;
+            background-color: rgba(0, 0, 0, 0.7);
+            height: 100vh;
+            text-align: center;
+            border-radius:5px ;
+        }
+        .content{
+            padding:30px;
+        }
+        h1{
+            color:wheat;
+
+        }
+        .content h2,p{
+            font-weight: lighter;
+            letter-spacing: 1px;
+            width: 70%;
+            margin: 10px auto;
+        }
+        .content h2{
+            font-weight: 400;
+        }
+        .content h3{
+            margin-top: 20px;
+        }
+        nav{
+            font-family: 'Raleway', sans-serif;
+            overflow: hidden;
+            background:#5c0101;
+            line-height:30px;
+            width: 100%;
+            text-align: right;
+            position: fixed;
+            z-index: 1;
+        }
+        nav .nav-item{
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 16px;
+            vertical-align: middle;
+            transition: all 0.3s ease;
+        }
+        nav .nav-item:hover{
+            background: #D6C3B3;
+            color: black;
+
+        }
+        nav .nav-item.active{
+            background: #000000;
+            color: white;
+        }
+
+        nav img{
+            margin: 8px 8px 8px 30px;
+            height: 42px;
+            float: left;
+            border-radius:10PX;
+        }
+ </style>
+</head>
+<body>
+    <nav>
+            <a href="Vidura_MainPage.html"><img src="images/Our_logo.jpg" alt="logo" id="logo"></a>
+            <a class="nav-item" href="Vidura_MainPage.html">Home</a>
+            <a class="nav-item" href="Vidura_FeedbackPage.html">Comments</a>
+            <a class="nav-item" href="Kaviru_mainPage.html">Products</a>
+            <a class="nav-item" href="Quiz.html">Quiz</a>
+            <a class="nav-item" href="Senuja_Sitemap.html">Site map</a>
+            <a class="nav-item" href="Senuja_Gallery.html">Gallery</a>
+            <a class="nav-item" href="Chavidu_studentdetails.html">About Us</a>
+    </nav>
+    <div class="center">
+        <div class="avatar">
+            <img src="images/myimg.jpeg" alt="face">
+        </div>
+        <div class="content">
+            <h1>Senuja Udugampola</h1>
+            <h2>Software Engineering Student</h2>
+            <hr>
+            <p>Role:Student 4</p>
+            <p>UOW id:w1953561</p>
+            <p>IIT id:20220789</p>
+            <hr>
+            <p>The following pages wre edited by me</p>
+            <h3>Sitemap</h3>
+            <p>Created a sitemap using html and css with SVG.</p>
+            <h3>Gallery</h3>
+            <p>I set up the gallery with text size increase/decrease buttons, background/text color changing button and also a random color changing button on background/text too.</p>
+            <hr>
+            <h3>Contact Me</h3>
+            <p>Email:senuja.20220789@iit.ac.lk</p>
+            <p>Tel:0763730192</p>
+        </div>
+    </div>
+</body>
+</html>

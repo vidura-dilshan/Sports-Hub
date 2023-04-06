@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Sitemap </title>
+	<link rel="stylesheet" href="Senuja_Sitemap.css">
+	</head>
+
+    <body>
+        <nav> <!--navigation bar -->
+            <a href="Vidura_MainPage.html"><img src="images/Our_logo.jpg" alt="logo" id="logo"></a>
+            <a class="nav-item" href="Vidura_MainPage.html">Home</a>
+            <a class="nav-item" href="Vidura_FeedbackPage.html">Comments</a>
+            <a class="nav-item" href="Kaviru_mainPage.html">Products</a>
+            <a class="nav-item" href="Quiz.html">Quiz</a>
+            <a class="nav-item active" href="Senuja_Sitemap.html">Site map</a>
+            <a class="nav-item" href="Senuja_Gallery.html">Gallery</a>
+            <a class="nav-item" href="Chavidu_studentdetails.html">About Us</a>
+        </nav>
+    
+        <svg viewBox="0 0 2000 800" fill="none">
+            <defs> <!--offset a rectangle, then blend the original on top of the offset image,https://www.w3schools.com/graphics/svg_examples.asp-->
+                <filter id="filter" x="0" y="0">
+                  <feGaussianBlur stdDeviation="5" />
+                  <feOffset dx="5" dy="5" />
+                </filter>
+            </defs>
+
+            <!--svg icons -->
+            <a xlink:href="vidura_MainPage.html"> <!--home page icon-->
+            <rect x="750" y="200" rx="20" ry="20" width="496" height="96" fill="white" filter="url(#filter)" />
+            <rect style="fill:rgb(226, 97, 190)" x="750" y="200" rx="20" ry="20" width="500" height="100" />
+            <image href= "images/Home.jpg" x="750" y="192" height="100" width="200"/>
+            <text x="1050" y="265" font-size="50" text-anchor="middle">HOME PAGE</text>
+            </a>
+
+            <a xlink:href="kaviru_presentation.html"> <!--presentaion page icon -->
+            <rect x="8" y="500" rx="20" ry="20" width="237" height="237" fill="white" filter="url(#filter)" />
+            <rect style="fill:rgb(104,202,171)"  x="8" y="500" rx="20" ry="20" width="240" height="240" />
+            <image href= "images/presentation.webp " x="18" y="530" height="120" width="220"/>
+            <text x="128" y="680" fill="black" font-size="20" text-anchor="middle">Presentaion Page</text>
+            </a>
+
+            <a xlink:href="Kaviru_mainPage.html"> <!--buy page icon -->
+            <rect x="295" y="500" rx="20" ry="20" width="237" height="237" fill="white" filter="url(#filter)" />
+            <rect style="fill:rgb(46,178,255)"  x="295" y="500" rx="20" ry="20" width="240" height="240" />
+            <image href= "images/buy.png" x="305" y="530" height="120" width="220"/>
+            <text x="415" y="680" fill="black" font-size="20" text-anchor="middle">Buy Products</text>
+            </a>
+
+            <a xlink:href="Vidura_FeedbackPage.html"> <!--Query Form page icon -->
+            <rect x="585" y="500" rx="20" ry="20" width="237" height="237" fill="white" filter="url(#filter)" />
+            <rect style="fill:rgb(68,217,230)"  x="585" y="500" rx="20" ry="20" width="240" height="240" />
+            <image href= "images/query.png" x="595" y="530" height="120" width="220"/>
+            <text x="705" y="680" fill="black" font-size="20" text-anchor="middle">Query Form</text>
+            </a>
+
+            <a xlink:href="Quiz.html"> <!--quiz page icon -->
+            <rect x="875" y="500" rx="20" ry="20" width="237" height="237" fill="white" filter="url(#filter)" />
+            <rect style="fill:rgb(195,88,237)"  x="875" y="500" rx="20" ry="20" width="240" height="240" />
+            <image href= "images/quiz.webp" x="885" y="530" height="120" width="220"/>
+            <text x="995" y="680" fill="black" font-size="20" text-anchor="middle">Quiz</text>
+            </a>
+
+            <a xlink:href="Senuja_Sitemap.html"> <!--sitemap page icon -->
+            <rect x="1165" y="500" rx="20" ry="20" width="237" height="237" fill="white" filter="url(#filter)" />
+            <rect style="fill:rgb(255,189,74)"  x="1165" y="500" rx="20" ry="20" width="240" height="240" />
+            <image href= "images/sitemap.png" x="1175" y="530" height="120" width="220"/>
+            <text x="1285" y="680" fill="black" font-size="20" text-anchor="middle">Sitemap</text>
+            </a>
+
+            <a xlink:href="Senuja_Gallery.html"> <!--gallery page icon -->
+            <rect x="1455" y="500" rx="20" ry="20" width="237" height="237" fill="white" filter="url(#filter)" />
+            <rect style="fill:rgb(230,136,68)"  x="1455" y="500" rx="20" ry="20" width="240" height="240" />
+            <image href= "images/gallery.png" x="1465" y="530" height="120" width="220"/>
+            <text x="1575" y="680" fill="black" font-size="20" text-anchor="middle">Gallery</text> 
+            </a>
+
+            <a xlink:href="Chavidu_studentdetails.html"> <!--student detail page icon -->
+            <rect x="1750" y="500" rx="20" ry="20" width="237" height="237" fill="white" filter="url(#filter)" />
+            <rect style="fill:rgb(230,68,68)"  x="1750" y="500" rx="20" ry="20" width="240" height="240" />
+            <image href= "images/aboutus.png" x="1760" y="530" height="120" width="220"/>
+            <text x="1870" y="680" fill="black" font-size="20" text-anchor="middle">About Us</text>
+            </a>
+
+            <!-- icon conneting lines -->
+            <polyline points="1000,300 1000,500" style="fill:none;stroke:white;stroke-width:3" />
+            <polyline points="120,500 120,400 1870,400 1870,500" style="fill:none;stroke:white;stroke-width:3" />
+            <polyline points="415,500 415,400 705,400 705,500" style="fill:none;stroke:white;stroke-width:3" />
+            <polyline points="1285,500 1285,400 1575,400 1575,500" style="fill:none;stroke:white;stroke-width:3" />
+
+        </svg>
+
+        <div class="footer"> <!--footer -->
+            <div id="footerRow2">
+                <div class="footerpageEditbtn">
+                    <a href="Senuja_pageeditor.html">Page Editor</a>
+                </div>
+                <div class="rightcornbtn"> <!--to the top button -->
+                    <div class="view">
+                        <a href="#scrollpoint">Go Top</a>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </body>
+</html>

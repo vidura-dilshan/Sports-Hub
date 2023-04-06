@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="Kaviru_mainPage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Buy products</title>
+    </head>
+    <body>
+        <nav>
+            <a href="Vidura_MainPage.html"><img src="images/Our_logo.jpg" alt="logo" id="logo"></a>
+            <a class="nav-item" href="Vidura_MainPage.html">Home</a>
+            <a class="nav-item" href="Vidura_FeedbackPage.html">Comments</a>
+            <a class="nav-item active" href="Kaviru_mainPage.html">Products</a>
+            <a class="nav-item" href="Quiz.html">Quiz</a>
+            <a class="nav-item" href="Senuja_Sitemap.html">Site map</a>
+            <a class="nav-item" href="Senuja_Gallery.html">Gallery</a>
+            <a class="nav-item" href="Chavidu_studentdetails.html">About Us</a>
+        </nav>
+        <div id="header">
+            <!-- <div class="container">
+                <form action="" class="search-bar">
+                    <input type="text" placeholder="search the item" name="q">
+                    <button type="submit"><img src="icons/search.png"></button>
+                </form>
+            </div> -->
+        </div>
+          
+        <div class="main">
+            <table>
+                <tr>
+                    <td><h1 id="intro_text">Things get better,<br> With Sports.<br><br>Let’s Buy!<br>Let’s Play!</td>
+                    <td>
+                        <img src="wallpapers/cricket_man.jpg" id="cricket_man">
+                        <img src="wallpapers/hocky_man.png" id="hocky_man">
+                        <img src="wallpapers/basketball_man.jpg" id="basketball_man">
+                        <img src="wallpapers/chess.jpeg" id="chess">
+                    </td>    
+                </tr>
+            </table>
+        </div>
+        <div class="store">
+            <div class="content">
+                <img src="product_pics/bat.jpg" id="bat" class="product_img">
+                <h3 class="product-title">Bats</h3>
+                <p>Best Quality Beginner Leather Cricket Bat / SF Bat.</p>
+                <h6 class="product_price">Rs. 5850</h6>
+                <button class="buy_btn">Buy Now</button>
+            </div>
+            <div class="content">
+                <img src="product_pics/Ball.jpg" id="ball" class="product_img">
+                <h3 class="product-title">Balls</h3>
+                <p>Best Highest Quality Cricket Leather Ball.</p>
+                <h6 class="product_price">Rs. 1000</h6>
+                <button class="buy_btn">Buy Now</button>
+            </div>
+            <div class="content">
+                <img src="product_pics/golves.jpg" id="gloves" class="product_img">
+                <h3 class="product-title">Golves</h3>
+                <p>Best Quality Batting Gloves</p>
+                <h6 class="product_price">Rs. 2500</h6>
+                <button class="buy_btn">Buy Now</button>
+            </div>
+            <div class="content">
+                <img src="product_pics/pads.jpg" id="pad" class="product_img">
+                <h3 class="product-title">Pads</h3>
+                <p>Best Highest Quality Fielding Pads.</p>
+                <h6 class="product_price">Rs. 3500</h6>
+                <button class="buy_btn">Buy Now</button>
+            </div>
+            <div class="content">
+                <img src="product_pics/helmet.jpg" id="helmet" class="product_img">
+                <h3 class="product-title">Helmets</h3>
+                <p>Cricket helmet for Profession use.</p>
+                <h6 class="product_price">Rs. 1500</h6>
+                <button class="buy_btn">Buy Now</button>
+            </div>
+            <div class="content">
+                <img src="product_pics/wicket_set.jpg" id="wicket_set" class="product_img">
+                <h3 class="product-title">Wicket Sets</h3>
+                <p>LED Wicket stumps & Wicket gloves</p>
+                <h6 class="product_price">Rs. 2000</h6>
+                <button class="buy_btn">Buy Now</button>
+               </div>
+            <div class="content">
+                <img src="product_pics/basketball.jpg" id="basketball" class="product_img">
+                <h3 class="product-title">Basketballs</h3>
+                <p>Best Highest Quality Basketballs.</p>
+                <h6 class="product_price">Rs. 3500</h6>
+                <button class="buy_btn">Buy Now</button>
+               </div>
+            <div class="content">
+                <img src="product_pics/basketball-ring.jpg" id="basketball_ring" class="product_img">
+                <h3 class="product-title">Basketball Rings</h3>
+                <p>Basketball Rings for Profession use.</p>
+                <h6 class="product_price">Rs. 5000</h6>
+                <button class="buy_btn">Buy Now</button>
+               </div>
+            <div class="content">
+                <img src="product_pics/chess_board.jpg" id="chess_board" class="product_img">
+                <h3 class="product-title">Chess Boards</h3>
+                <p>Best high quality Chess Boards</p>
+                <h6 class="product_price">Rs. 4500</h6>
+                <button class="buy_btn">Buy Now</button>
+               </div>
+
+        </div> 
+        <div class="cart">
+            <h2 class="cart_title">Your Cart</h2>
+            <div class="cart_content">   
+                </div>
+                <div class="total">
+                    <div class="total_title">Total&#160</div>
+                    <div class="total_price">Rs. 0</div>
+                </div><br>
+                
+                <form class="person-details">
+                    <label for="name">Enter your name:</label>
+                    <input type="text" autocomplete=off id="name" name="name">
+                    <label for="email-or-con">Enter your email or contact no :</label>
+                    <input type="text" autocomplete=off id="email-or-con" name="email_or_contact">
+                  </form>
+                  <button type="button" class="btn-buy" onclick="TransferDataToCheckout()" disabled>Checkout</button>
+                <i class="fa fa-close" id="close-cart"></i>
+            </div> 
+        </div> 
+        <button id="cart-icon"><img src="icons/shopping-bag-white.png"></button>
+        <script src="Kaviru_mainPage.js"></script>
+    </body>
+      <!--footer-->
+      <div class="footer">
+        <div id="footerRow2">
+            <div class="footerpageEditbtn">
+                <a href="Kaviru_pageEditor.html">Page Editor</a>
+            </div>
+            <div class="rightcornbtn">
+                <div class="view">
+                    <a href="#scrollimg">Go Top</a>
+                </div>
+            </div>
+        </div>   
+    </div>
+</body>
+</html>
+</html>
