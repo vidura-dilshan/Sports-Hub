@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Roboto',sans-serif;
 }
+/*-----main comment form----*/
 .input-item {
     float: left;
 }
@@ -107,6 +108,7 @@ p {
     border-radius: 4px;  
     margin: 0px 20px 0px 20px;
 }
+/*-------Navigation bar--------*/
 nav{
     font-family: 'Raleway', sans-serif;
     overflow: hidden;
@@ -143,6 +145,7 @@ nav img{
     float: left;
     border-radius: 10PX;
 }
+/*----footer-----*/
 .footer{
     margin-top: 2%;
     display: flex;
